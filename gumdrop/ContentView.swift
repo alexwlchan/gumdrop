@@ -31,6 +31,7 @@ struct ContentView: View {
                                 PlayerContainerView(captureSession: viewModel.captureSession)
                                     .cornerRadius(25)
                                     .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fit)
+                                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 2)
                                 
                                 HStack {
                                     Spacer()
@@ -48,7 +49,7 @@ struct ContentView: View {
                                     
                                     Spacer()
                                 }
-                                
+                                    .offset(x: 0, y: 10)
                                 
                                 Spacer(minLength: geometry.size.height * 0.1)
                             }
