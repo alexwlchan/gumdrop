@@ -11,7 +11,7 @@
 		942504352AE5647E00FA7CEF /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942504342AE5647E00FA7CEF /* PlayerContainerView.swift */; };
 		942504382AE564B000FA7CEF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942504372AE564B000FA7CEF /* ContentViewModel.swift */; };
 		9425043B2AE5694300FA7CEF /* EmbeddedColorWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425043A2AE5694300FA7CEF /* EmbeddedColorWell.swift */; };
-		9425043D2AE5719700FA7CEF /* CapturePhotoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425043C2AE5719700FA7CEF /* CapturePhotoDelegate.swift */; };
+		9425043F2AE57B0300FA7CEF /* LimitedTimeRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425043E2AE57B0300FA7CEF /* LimitedTimeRendering.swift */; };
 		94410DC92AE5611200BBCAC4 /* gumdropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DC82AE5611200BBCAC4 /* gumdropApp.swift */; };
 		94410DCB2AE5611200BBCAC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DCA2AE5611200BBCAC4 /* ContentView.swift */; };
 		94410DCD2AE5611400BBCAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94410DCC2AE5611400BBCAC4 /* Assets.xcassets */; };
@@ -43,7 +43,7 @@
 		942504372AE564B000FA7CEF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		942504392AE5653B00FA7CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9425043A2AE5694300FA7CEF /* EmbeddedColorWell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedColorWell.swift; sourceTree = "<group>"; };
-		9425043C2AE5719700FA7CEF /* CapturePhotoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePhotoDelegate.swift; sourceTree = "<group>"; };
+		9425043E2AE57B0300FA7CEF /* LimitedTimeRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTimeRendering.swift; sourceTree = "<group>"; };
 		94410DC52AE5611200BBCAC4 /* gumdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gumdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94410DC82AE5611200BBCAC4 /* gumdropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropApp.swift; sourceTree = "<group>"; };
 		94410DCA2AE5611200BBCAC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +88,7 @@
 				942504322AE5642B00FA7CEF /* PlayerView.swift */,
 				942504342AE5647E00FA7CEF /* PlayerContainerView.swift */,
 				9425043A2AE5694300FA7CEF /* EmbeddedColorWell.swift */,
+				9425043E2AE57B0300FA7CEF /* LimitedTimeRendering.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,7 +122,6 @@
 				94410DCC2AE5611400BBCAC4 /* Assets.xcassets */,
 				94410DD12AE5611400BBCAC4 /* gumdrop.entitlements */,
 				942504362AE5649500FA7CEF /* Views */,
-				9425043C2AE5719700FA7CEF /* CapturePhotoDelegate.swift */,
 			);
 			path = gumdrop;
 			sourceTree = "<group>";
@@ -272,12 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9425043F2AE57B0300FA7CEF /* LimitedTimeRendering.swift in Sources */,
 				942504332AE5642B00FA7CEF /* PlayerView.swift in Sources */,
 				9425043B2AE5694300FA7CEF /* EmbeddedColorWell.swift in Sources */,
 				94410DCB2AE5611200BBCAC4 /* ContentView.swift in Sources */,
 				94410DC92AE5611200BBCAC4 /* gumdropApp.swift in Sources */,
 				942504352AE5647E00FA7CEF /* PlayerContainerView.swift in Sources */,
-				9425043D2AE5719700FA7CEF /* CapturePhotoDelegate.swift in Sources */,
 				942504382AE564B000FA7CEF /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

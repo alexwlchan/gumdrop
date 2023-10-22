@@ -22,39 +22,69 @@ struct ContentView: View {
             bgColor
                 .ignoresSafeArea()
                 .overlay {
-                    HStack {
-                        Spacer()
-                        
-                        VStack {
-                            Spacer(minLength: geometry.size.height * 0.1)
-                            
-                            PlayerContainerView(captureSession: viewModel.captureSession)
-                                .cornerRadius(5)
-                                .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fit)
-                            
-                            HStack {
-                                Spacer()
+                    ZStack {
+                        HStack {
+                            Spacer()
+                            VStack {
+                                Spacer(minLength: geometry.size.height * 0.1)
                                 
-                                EmbeddedColorWell(selectedColor: $bgColor)
-                                    .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
-                                    .frame(width: 80, height: 35)
+                                PlayerContainerView(captureSession: viewModel.captureSession)
+                                    .cornerRadius(5)
+                                    .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fit)
                                 
-                                Button {
-                                    viewModel.takePicture()
-                                } label: {
-                                    Image(systemName: "camera.fill")
+                                HStack {
+                                    Spacer()
+                                    
+                                    EmbeddedColorWell(selectedColor: $bgColor)
+                                        .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
+                                        .frame(width: 80, height: 35)
+                                    
+                                    Button {
+                                        viewModel.takePicture()
+                                    } label: {
+                                        Image(systemName: "camera.fill")
+                                    }
+                                        .controlSize(.large)
+                                    
+                                    Spacer()
                                 }
-                                    .controlSize(.large)
                                 
-                                Spacer()
+                                
+                                Spacer(minLength: geometry.size.height * 0.1)
                             }
                             
-                            
-                            Spacer(minLength: geometry.size.height * 0.1)
+                            Spacer()
                         }
-                        
-                        Spacer()
                     }
+                    
+                    HStack {
+                        Spacer()
+                        VStack {
+                            ForEach(Array(viewModel.messages.enumerated()), id: \.element) { index, message in
+                                Text(message)
+                                    .background(.black)
+                                    .padding()
+                                    .onAppear {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                            viewModel.messages.remove(at: 0)
+                                            
+                                            if (!viewModel.messages.isEmpty) {
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                    viewModel.messages.remove(at: 0)
+                                                    
+                                                    if (!viewModel.messages.isEmpty) {
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                            }
+                            
+                            Spacer()
+                        }
+                    }
+                    
                 }
         }
     }
