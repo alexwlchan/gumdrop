@@ -44,14 +44,14 @@
 		942504392AE5653B00FA7CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9425043A2AE5694300FA7CEF /* EmbeddedColorWell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedColorWell.swift; sourceTree = "<group>"; };
 		9425043E2AE57B0300FA7CEF /* LimitedTimeRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTimeRendering.swift; sourceTree = "<group>"; };
-		94410DC52AE5611200BBCAC4 /* gumdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gumdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94410DC52AE5611200BBCAC4 /* Gumdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gumdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94410DC82AE5611200BBCAC4 /* gumdropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropApp.swift; sourceTree = "<group>"; };
 		94410DCA2AE5611200BBCAC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94410DCC2AE5611400BBCAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94410DD12AE5611400BBCAC4 /* gumdrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gumdrop.entitlements; sourceTree = "<group>"; };
-		94410DD62AE5611400BBCAC4 /* gumdropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gumdropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94410DD62AE5611400BBCAC4 /* GumdropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GumdropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94410DDA2AE5611400BBCAC4 /* gumdropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropTests.swift; sourceTree = "<group>"; };
-		94410DE02AE5611400BBCAC4 /* gumdropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gumdropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94410DE02AE5611400BBCAC4 /* GumdropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GumdropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94410DE42AE5611400BBCAC4 /* gumdropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropUITests.swift; sourceTree = "<group>"; };
 		94410DE62AE5611400BBCAC4 /* gumdropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,9 +106,9 @@
 		94410DC62AE5611200BBCAC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94410DC52AE5611200BBCAC4 /* gumdrop.app */,
-				94410DD62AE5611400BBCAC4 /* gumdropTests.xctest */,
-				94410DE02AE5611400BBCAC4 /* gumdropUITests.xctest */,
+				94410DC52AE5611200BBCAC4 /* Gumdrop.app */,
+				94410DD62AE5611400BBCAC4 /* GumdropTests.xctest */,
+				94410DE02AE5611400BBCAC4 /* GumdropUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94410DC42AE5611200BBCAC4 /* gumdrop */ = {
+		94410DC42AE5611200BBCAC4 /* Gumdrop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94410DEA2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "gumdrop" */;
+			buildConfigurationList = 94410DEA2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "Gumdrop" */;
 			buildPhases = (
 				94410DC12AE5611200BBCAC4 /* Sources */,
 				94410DC22AE5611200BBCAC4 /* Frameworks */,
@@ -158,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = gumdrop;
+			name = Gumdrop;
 			productName = gumdrop;
-			productReference = 94410DC52AE5611200BBCAC4 /* gumdrop.app */;
+			productReference = 94410DC52AE5611200BBCAC4 /* Gumdrop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		94410DD52AE5611400BBCAC4 /* gumdropTests */ = {
+		94410DD52AE5611400BBCAC4 /* GumdropTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94410DED2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "gumdropTests" */;
+			buildConfigurationList = 94410DED2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "GumdropTests" */;
 			buildPhases = (
 				94410DD22AE5611400BBCAC4 /* Sources */,
 				94410DD32AE5611400BBCAC4 /* Frameworks */,
@@ -176,14 +176,14 @@
 			dependencies = (
 				94410DD82AE5611400BBCAC4 /* PBXTargetDependency */,
 			);
-			name = gumdropTests;
+			name = GumdropTests;
 			productName = gumdropTests;
-			productReference = 94410DD62AE5611400BBCAC4 /* gumdropTests.xctest */;
+			productReference = 94410DD62AE5611400BBCAC4 /* GumdropTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		94410DDF2AE5611400BBCAC4 /* gumdropUITests */ = {
+		94410DDF2AE5611400BBCAC4 /* GumdropUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94410DF02AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "gumdropUITests" */;
+			buildConfigurationList = 94410DF02AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "GumdropUITests" */;
 			buildPhases = (
 				94410DDC2AE5611400BBCAC4 /* Sources */,
 				94410DDD2AE5611400BBCAC4 /* Frameworks */,
@@ -194,9 +194,9 @@
 			dependencies = (
 				94410DE22AE5611400BBCAC4 /* PBXTargetDependency */,
 			);
-			name = gumdropUITests;
+			name = GumdropUITests;
 			productName = gumdropUITests;
-			productReference = 94410DE02AE5611400BBCAC4 /* gumdropUITests.xctest */;
+			productReference = 94410DE02AE5611400BBCAC4 /* GumdropUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94410DC02AE5611200BBCAC4 /* Build configuration list for PBXProject "gumdrop" */;
+			buildConfigurationList = 94410DC02AE5611200BBCAC4 /* Build configuration list for PBXProject "Gumdrop" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -235,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94410DC42AE5611200BBCAC4 /* gumdrop */,
-				94410DD52AE5611400BBCAC4 /* gumdropTests */,
-				94410DDF2AE5611400BBCAC4 /* gumdropUITests */,
+				94410DC42AE5611200BBCAC4 /* Gumdrop */,
+				94410DD52AE5611400BBCAC4 /* GumdropTests */,
+				94410DDF2AE5611400BBCAC4 /* GumdropUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,12 +304,12 @@
 /* Begin PBXTargetDependency section */
 		94410DD82AE5611400BBCAC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94410DC42AE5611200BBCAC4 /* gumdrop */;
+			target = 94410DC42AE5611200BBCAC4 /* Gumdrop */;
 			targetProxy = 94410DD72AE5611400BBCAC4 /* PBXContainerItemProxy */;
 		};
 		94410DE22AE5611400BBCAC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94410DC42AE5611200BBCAC4 /* gumdrop */;
+			target = 94410DC42AE5611200BBCAC4 /* Gumdrop */;
 			targetProxy = 94410DE12AE5611400BBCAC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,14 +436,15 @@
 				CODE_SIGN_ENTITLEMENTS = gumdrop/gumdrop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BHMT2FFKWV;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gumdrop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Gumdrop;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Gumdrop needs camera permission to show pictures from your webcam.";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Made by Alex Chan <alex@alexwlchan.net>";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Gumdrop needs to be able to save photos to your Photos Library.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,14 +466,15 @@
 				CODE_SIGN_ENTITLEMENTS = gumdrop/gumdrop.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BHMT2FFKWV;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = gumdrop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Gumdrop;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Gumdrop needs camera permission to show pictures from your webcam.";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Made by Alex Chan <alex@alexwlchan.net>";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Gumdrop needs to be able to save photos to your Photos Library.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +494,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = BHMT2FFKWV;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -501,7 +503,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gumdrop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gumdrop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gumdrop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gumdrop";
 			};
 			name = Debug;
 		};
@@ -511,7 +513,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = BHMT2FFKWV;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -520,7 +522,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gumdrop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gumdrop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gumdrop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gumdrop";
 			};
 			name = Release;
 		};
@@ -529,7 +531,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = BHMT2FFKWV;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -546,7 +548,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = BHMT2FFKWV;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -561,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94410DC02AE5611200BBCAC4 /* Build configuration list for PBXProject "gumdrop" */ = {
+		94410DC02AE5611200BBCAC4 /* Build configuration list for PBXProject "Gumdrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94410DE82AE5611400BBCAC4 /* Debug */,
@@ -570,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94410DEA2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "gumdrop" */ = {
+		94410DEA2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "Gumdrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94410DEB2AE5611400BBCAC4 /* Debug */,
@@ -579,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94410DED2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "gumdropTests" */ = {
+		94410DED2AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "GumdropTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94410DEE2AE5611400BBCAC4 /* Debug */,
@@ -588,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94410DF02AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "gumdropUITests" */ = {
+		94410DF02AE5611400BBCAC4 /* Build configuration list for PBXNativeTarget "GumdropUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94410DF12AE5611400BBCAC4 /* Debug */,

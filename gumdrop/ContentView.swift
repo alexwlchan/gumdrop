@@ -29,7 +29,7 @@ struct ContentView: View {
                                 Spacer(minLength: geometry.size.height * 0.1)
                                 
                                 PlayerContainerView(captureSession: viewModel.captureSession)
-                                    .cornerRadius(5)
+                                    .cornerRadius(25)
                                     .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fit)
                                 
                                 HStack {
@@ -56,35 +56,6 @@ struct ContentView: View {
                             Spacer()
                         }
                     }
-                    
-                    HStack {
-                        Spacer()
-                        VStack {
-                            ForEach(Array(viewModel.messages.enumerated()), id: \.element) { index, message in
-                                Text(message)
-                                    .background(.black)
-                                    .padding()
-                                    .onAppear {
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                            viewModel.messages.remove(at: 0)
-                                            
-                                            if (!viewModel.messages.isEmpty) {
-                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                    viewModel.messages.remove(at: 0)
-                                                    
-                                                    if (!viewModel.messages.isEmpty) {
-                                                        
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                            }
-                            
-                            Spacer()
-                        }
-                    }
-                    
                 }
         }
     }
