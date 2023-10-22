@@ -15,7 +15,22 @@ struct ContentView: View {
     }
 
     var body: some View {
-        PlayerContainerView(captureSession: viewModel.captureSession)
-           .clipShape(Circle())
+        GeometryReader { geometry in
+            HStack {
+                Spacer()
+                
+                VStack {
+                    Spacer(minLength: geometry.size.height * 0.15)
+                    
+                    PlayerContainerView(captureSession: viewModel.captureSession)
+                        .cornerRadius(5)
+                        .aspectRatio(CGSize(width: 4, height: 3), contentMode: .fit)
+                    
+                    Spacer(minLength: geometry.size.height * 0.15)
+                }
+                
+                Spacer()
+            }
+        }
     }
 }
