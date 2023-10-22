@@ -38,10 +38,13 @@ struct ContentView: View {
                                 EmbeddedColorWell(selectedColor: $bgColor)
                                     .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
                                     .frame(width: 80, height: 35)
-                                    .padding()
                                 
-                                Button("take photo!", action: viewModel.takePicture)
-                                    .padding()
+                                Button {
+                                    viewModel.takePicture()
+                                } label: {
+                                    Image(systemName: "camera.fill")
+                                }
+                                    .controlSize(.large)
                                 
                                 Spacer()
                             }
