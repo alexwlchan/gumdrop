@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942504332AE5642B00FA7CEF /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942504322AE5642B00FA7CEF /* PlayerView.swift */; };
+		942504352AE5647E00FA7CEF /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942504342AE5647E00FA7CEF /* PlayerContainerView.swift */; };
+		942504382AE564B000FA7CEF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942504372AE564B000FA7CEF /* ContentViewModel.swift */; };
 		94410DC92AE5611200BBCAC4 /* gumdropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DC82AE5611200BBCAC4 /* gumdropApp.swift */; };
 		94410DCB2AE5611200BBCAC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DCA2AE5611200BBCAC4 /* ContentView.swift */; };
 		94410DCD2AE5611400BBCAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94410DCC2AE5611400BBCAC4 /* Assets.xcassets */; };
-		94410DD02AE5611400BBCAC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94410DCF2AE5611400BBCAC4 /* Preview Assets.xcassets */; };
 		94410DDB2AE5611400BBCAC4 /* gumdropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DDA2AE5611400BBCAC4 /* gumdropTests.swift */; };
 		94410DE52AE5611400BBCAC4 /* gumdropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DE42AE5611400BBCAC4 /* gumdropUITests.swift */; };
 		94410DE72AE5611400BBCAC4 /* gumdropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94410DE62AE5611400BBCAC4 /* gumdropUITestsLaunchTests.swift */; };
@@ -34,11 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		942504322AE5642B00FA7CEF /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		942504342AE5647E00FA7CEF /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		942504372AE564B000FA7CEF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		942504392AE5653B00FA7CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		94410DC52AE5611200BBCAC4 /* gumdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gumdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94410DC82AE5611200BBCAC4 /* gumdropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropApp.swift; sourceTree = "<group>"; };
 		94410DCA2AE5611200BBCAC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94410DCC2AE5611400BBCAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		94410DCF2AE5611400BBCAC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94410DD12AE5611400BBCAC4 /* gumdrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gumdrop.entitlements; sourceTree = "<group>"; };
 		94410DD62AE5611400BBCAC4 /* gumdropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gumdropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94410DDA2AE5611400BBCAC4 /* gumdropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gumdropTests.swift; sourceTree = "<group>"; };
@@ -72,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942504362AE5649500FA7CEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				942504372AE564B000FA7CEF /* ContentViewModel.swift */,
+				942504322AE5642B00FA7CEF /* PlayerView.swift */,
+				942504342AE5647E00FA7CEF /* PlayerContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		94410DBC2AE5611200BBCAC4 = {
 			isa = PBXGroup;
 			children = (
@@ -95,21 +110,14 @@
 		94410DC72AE5611200BBCAC4 /* gumdrop */ = {
 			isa = PBXGroup;
 			children = (
+				942504392AE5653B00FA7CEF /* Info.plist */,
 				94410DC82AE5611200BBCAC4 /* gumdropApp.swift */,
 				94410DCA2AE5611200BBCAC4 /* ContentView.swift */,
 				94410DCC2AE5611400BBCAC4 /* Assets.xcassets */,
 				94410DD12AE5611400BBCAC4 /* gumdrop.entitlements */,
-				94410DCE2AE5611400BBCAC4 /* Preview Content */,
+				942504362AE5649500FA7CEF /* Views */,
 			);
 			path = gumdrop;
-			sourceTree = "<group>";
-		};
-		94410DCE2AE5611400BBCAC4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				94410DCF2AE5611400BBCAC4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		94410DD92AE5611400BBCAC4 /* gumdropTests */ = {
@@ -233,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94410DD02AE5611400BBCAC4 /* Preview Assets.xcassets in Resources */,
 				94410DCD2AE5611400BBCAC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942504332AE5642B00FA7CEF /* PlayerView.swift in Sources */,
 				94410DCB2AE5611200BBCAC4 /* ContentView.swift in Sources */,
 				94410DC92AE5611200BBCAC4 /* gumdropApp.swift in Sources */,
+				942504352AE5647E00FA7CEF /* PlayerContainerView.swift in Sources */,
+				942504382AE564B000FA7CEF /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,11 +429,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"gumdrop/Preview Content\"";
 				DEVELOPMENT_TEAM = BHMT2FFKWV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gumdrop/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Gumdrop needs camera permission to show pictures from your webcam.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,11 +457,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"gumdrop/Preview Content\"";
 				DEVELOPMENT_TEAM = BHMT2FFKWV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gumdrop/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Gumdrop needs camera permission to show pictures from your webcam.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
